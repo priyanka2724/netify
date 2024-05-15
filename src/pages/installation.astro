@@ -1,0 +1,63 @@
+---
+// component imports
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Manual Setup">
+  <section class="container start"> 
+    <div class="row start-row">
+      <div class="col-9 content-page"  >
+        <h2 class="start-h2 h2 " id="overview">Manual SetUp</h2>
+    
+
+        <div class="intro-para">
+        The quickest way to create a new Starlight site is using create astro as shown in the Getting Started <br> guide. If you want to add Starlight to an existing Astro project, this guide will explain how.
+        </div>
+    
+    
+        <h2 class="h2 main-h2" id="setup-starlight">Set up Starlight</h2>
+    
+        <p class=" main-h2" >To follow this guide, you’ll need an existing Astro project.</p><br><br>
+
+        <h1 class="h1 main-h2">Add the Starlight integration</h1>
+
+
+        <p  class=" main-h2">Starlight is an Astro integration. Add it to your site by running the astro add command in your project’s <br> root directory:</p>
+        <p  class=" main-h2">Starlight is ready for you to add new content, or bring your existing files!</p><br><br>
+    
+       
+    
+       
+        <h3 class="h3 main-h2" id="add-content">Add Content</h3>
+    
+        <p class=" main-h2" >Use the project configuration and individual page frontmatter configuration reference pages to ensure that your Starlight site is configured and functioning properly. See the guides in the sidebar for help adding content and customizing your Starlight site.</p>
+        <p  class=" main-h2">If your answer cannot be found in these docs, please visit the full Astro Docs for complete Astro documentation. Your question may be answered by understanding how Astro works in general, underneath this Starlight theme.</p>
+        <p  class=" main-h2">You can also check for any known Starlight issues on GitHub, and get help in the Astro Discord from our active, friendly community! Post questions in our #support forum with the “starlight” tag, or visit our dedicated #starlight channel to discuss current development and more!</p><br><br>
+    
+      </div>
+     
+      <div class="col-3 right-side-menu">
+        <h4 class="h4 side-content-h4">On This Page</h4>
+        <ul class="sidebar">
+          <li><a href="#overview">Overview</a></li>
+
+          <li><a href="#setup-starlight">Set up </a></li>
+          <li><a href="#add-content">Next Step</a></li>
+        </ul>
+      </div>
+    </div>
+     
+    </section>
+  </MainLayout>
+  <script>
+    // JavaScript to handle smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>

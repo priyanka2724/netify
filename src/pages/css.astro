@@ -1,0 +1,76 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+---
+
+<MainLayout title="Css">
+    <section class="container start"> 
+        <div class="row start-row">
+          <div class="col-9 content-page"  id="content-page">
+            <h1 class="start-h2 h1" id="overview">CSS & Styling</h1>
+        
+            <div class="intro-para">
+                You can style your Starlight site with custom CSS files or use the Starlight Tailwind plugin.
+
+            </div>
+        
+        
+            <h1 class="h1 main-h2" id="Add-Content">Custom CSS styles
+            </h1>
+        
+            <h4 class="h4 main-h2">Tailwind CSS</h4>
+            <p class=" main-h2" >
+                Tailwind CSS support in Astro projects is provided by the Astro Tailwind integration. Starlight provides a complementary Tailwind plugin to help configure Tailwind for compatibility with Starlight’s styles.                       </p>
+            <p  class=" main-h2">
+                Specify the structure of your files and directories with an unordered Markdown list inside . Create a  <br> sub-directory using a nested list or add a / to the end of a list item to render it as a directory without specific content.            </p>
+            <p  class=" main-h2">Starlight is ready for you to add new content, or bring your existing files!</p><br><br>
+        
+            <h4 class="h4 main-h2">The Starlight Tailwind plugin applies the following configuration:</h4> 
+        
+            <ul class="add-ul">
+              <li class="add-ul-li "> <b >Configures Tailwind’s dark</b>: variants to work with Starlight’s dark mode.<li>
+              <li class="add-ul-li">Uses Tailwind theme colors and fonts in Starlight’s UI.<li>
+              <li class="add-ul-li"><b>Components</b>: Discover built-in cards, tabs, and more in the “Components” guide.<li>
+              <li class="add-ul-li">Disables Tailwind’s Preflight reset styles while selectively restoring essential parts of Preflight required for Tailwind’s border utility classes.<li>
+              <li><li>
+              <li><li>
+            </ul><br><br>
+            <h3 class="h3 main-h2" id="theme">Theming</h3>
+        
+            <p class=" main-h2" >
+                Starlight’s color theme can be controlled by overriding its default custom properties. These variables are used throughout the UI with a range of gray shades used for text and background colors and an accent color used for links and to highlight current items in navigation.               </p>
+           
+                <h4 class="h4 main-h2">Color theme editor</h4>
+
+                <p  class=" main-h2">
+                    Use the sliders below to modify Starlight’s accent and gray color palettes. The dark and light preview areas will show the resulting colors, and the whole page will also update to preview your changes.
+                </p>
+            <p  class=" main-h2">You can also check for any known Starlight issues on GitHub, and get help in the Astro Discord from our active, friendly community! Post questions in our #support forum with the “starlight” tag, or visit our dedicated #starlight channel to discuss current development and more!</p><br><br>
+        
+          </div>
+         
+          <div class="col-3 right-side-menu">
+            <h4 class="h4 side-content-h4">On This Page</h4>
+            <ul class="sidebar">
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#Add-Content">Add Content</a></li>
+              <li><a href="#theme"> Themeing</a></li>
+            </ul>
+          </div>
+        </div>         
+        </section>
+
+
+</MainLayout>
+<script>
+  // JavaScript to handle smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+  
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+  </script>

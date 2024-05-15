@@ -1,0 +1,70 @@
+---
+// component imports
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+
+
+
+
+<MainLayout title="Start" description="Getting start">
+<section class="container start"> 
+<div class="row start-row">
+  <div class="col-9 content-page"  >
+    <h2 class="start-h2 h2 " id="introPara">Getting Started</h2>
+
+    <div class="intro-para" >
+      Starlight is a full-featured documentation theme built on top of the Astro framework. This guide will<br> help you get started with a new project. See the manual setup instructions to add Starlight to an<br> existing Astro project.
+    </div>
+
+
+    <h5 class="h5 main-h2" id="Add-Content">Add content</h5>
+
+    <p class=" main-h2" >Starlight is ready for you to add new content, or bring your existing files!</p>
+    <p  class=" main-h2">Add new pages to your site by creating Markdown files in the src/content/docs/ directory.</p>
+    <p  class=" main-h2">Starlight is ready for you to add new content, or bring your existing files!</p><br><br>
+
+    <h4 class="h4 main-h2" id="next-step">Next Step</h4> 
+
+    <ul class="add-ul">
+      <li class="add-ul-li "> <b >Configure</b>: Learn about common options in “Customizing Starlight”.<li>
+      <li class="add-ul-li"><b >Navigate</b>:  Set up your sidebar with the “Sidebar Navigation” guide.<li>
+      <li class="add-ul-li"><b>Components</b>: Discover built-in cards, tabs, and more in the “Components” guide.<li>
+      <li class="add-ul-li"><b>Deploy</b> : Publish your work with the “Deploy your site” guide in the Astro docs.<li>
+      <li><li>
+      <li><li>
+    </ul><br><br>
+    <h3 class="h3 main-h2" id="troubleshooting">TroubleShooting Starlight</h3>
+
+    <p class=" main-h2" >Use the project configuration and individual page frontmatter configuration reference pages to ensure that your Starlight site is configured and functioning properly. See the guides in the sidebar for help adding content and customizing your Starlight site.</p>
+    <p  class=" main-h2">If your answer cannot be found in these docs, please visit the full Astro Docs for complete Astro documentation. Your question may be answered by understanding how Astro works in general, underneath this Starlight theme.</p>
+    <p  class=" main-h2">You can also check for any known Starlight issues on GitHub, and get help in the Astro Discord from our active, friendly community! Post questions in our #support forum with the “starlight” tag, or visit our dedicated #starlight channel to discuss current development and more!</p><br><br>
+
+  </div>
+ 
+  <div class="col-3 right-side-menu">
+    <h4 class="h4 side-content-h4" >On This Page</h4>
+    <ul class="sidebar">
+      <li><a href="#introPara">OverView</a></li>
+      <li><a href="#Add-Content">Add Content</a></li>
+      <li><a href="#next-step">Next Step</a></li>
+      <li><a href="#troubleshooting">Troubleshooting</a></li>
+    </ul>
+  </div>
+</div>
+ 
+</section>
+
+</MainLayout>
+<script>
+  // JavaScript to handle smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+  
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+  </script>

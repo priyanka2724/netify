@@ -1,0 +1,111 @@
+---
+
+---
+<style>
+  nav ul {
+  padding: 5px 25px;
+  cursor: pointer;
+}
+nav ul li {
+  padding: 5px 0px;
+  border-left: 1px solid #c4c4c4;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li:hover {
+  background-color: #f0f0f0;
+}
+
+nav ul li a.active {
+  background-color: red;
+  color: white;
+}
+
+</style>
+
+<div>
+<div id="toggleButton">
+  <div class="toggle-header-div">
+    <span>Start Here</span>
+    <span> <i id="icon" class="fas fa-chevron-down arrow-icon"></i> </span>
+  </div>
+</div>
+
+<nav id="content">
+  <ul >
+    <li><a href="/start">Getting Started</a></li>
+    <li><a href="/installation">Installation</a></li>
+    <li><a href="/environment">Environement Impact</a></li>
+   
+  </ul>
+</nav>
+<div id="guideToggleButton">
+  <div class="toggle-header-div">
+    <span>Guide</span>
+    <span> <i id="guideIcon" class="fas fa-chevron-down arrow-icon"></i> </span>
+  </div>
+</div>
+
+<nav id="guidecontent">
+  <ul >
+    <li><a href="/page">Pages</a></li>
+    <li><a href="/component">Components</a></li>
+    <li><a href="/css">Css & Styling</a></li>
+    
+   
+  </ul>
+</nav>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const content = document.getElementById("content");
+    const toggleButton = document.getElementById("toggleButton");
+    const icon = document.getElementById("icon");
+
+    // Hide the content initially
+    content.style.display = "block";
+
+    // Add click event listener to the button
+    toggleButton.addEventListener("click", function () {
+      // Toggle the display property of the content
+      if (content.style.display === "none") {
+        content.style.display = "block";
+        // Change icon to up arrow when content is shown
+        icon.classList.remove("fa-chevron-right");
+        icon.classList.add("fa-chevron-down");
+      } else {
+        content.style.display = "none";
+        // Change icon to left arrow when content is hidden
+        icon.classList.remove("fa-chevron-down");
+        icon.classList.add("fa-chevron-right");
+      }
+    });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    const guidecontent = document.getElementById("guidecontent");
+    const toggleButton = document.getElementById("guideToggleButton");
+    const icon = document.getElementById("guideIcon");
+
+    // Hide the content initially
+    guidecontent.style.display = "block";
+
+    // Add click event listener to the button
+    toggleButton.addEventListener("click", function () {
+      // Toggle the display property of the content
+      if (guidecontent.style.display === "none") {
+        guidecontent.style.display = "block";
+        // Change icon to up arrow when content is shown
+        icon.classList.remove("fa-chevron-right");
+        icon.classList.add("fa-chevron-down");
+      } else {
+        guidecontent.style.display = "none";
+        // Change icon to left arrow when content is hidden
+        icon.classList.remove("fa-chevron-down");
+        icon.classList.add("fa-chevron-right");
+      }
+    });
+  });
+</script>

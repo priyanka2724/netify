@@ -1,0 +1,52 @@
+.toggle-header-div {
+  background: blue;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.start-h2 {
+  padding: 25px 50px;
+  border-bottom: 1px solid #c4c4c4 !important;
+}
+.main-h2 {
+  padding: 5px 50px;
+}
+.start-row {
+  height: 100vh;
+}
+.content-page {
+  border-right: 1px solid #c4c4c4 !important;
+  padding: 0;
+}
+.intro-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.add-ul {
+  padding: 0px 70px;
+}
+.add-ul-li {
+  list-style: disc;
+
+  padding: 5px 0px;
+}
+section{
+  height: 99vh;
+  overflow-y: auto;
+}
+.side-content-h4{
+  color: blue;
+}
+.right-side-menu{
+  position: fixed;
+    height: 100vh;
+    /* right: 0; */
+    left: 78%;
+    background: white;
+}

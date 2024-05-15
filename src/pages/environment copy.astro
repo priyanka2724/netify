@@ -1,0 +1,58 @@
+---
+// component imports
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout  title="Environment Setup" description="My About Page">
+  <section class="container start"> 
+    <div class="row start-row">
+      <div class="col-9 content-page"  id="content-page">
+        <h1 class="start-h2 h1 ">Eco-friendly docs</h1>
+    
+
+        <div class="intro-para">
+          Estimates for the climate impact of the web industry range from between 2% and 4% of global carbon <br> emissions, roughly equivalent to the emissions of the airline industry. There are many complex factors<br> in calculating the ecological impact of a website, but this guide includes a few tips for reducing the <br>environmental footprint of your docs site.     
+           </div>
+    
+          <div class="intro-para">
+            The good news is, choosing Starlight is a great start. According to the Website Carbon Calculator, this<br> site is cleaner than 99% of web pages tested, producing 0.01g of CO₂ per page visit.  
+
+          </div>
+        <h2 class="h2 main-h2" id="Add-Content">Page Weight</h2>
+    
+        <p class=" main-h2" >The more data a web page transfers, the more energy resources it requires. In April 2023, the median  web page required <br> a user  to download more than 2,000 KB according to data from the HTTP Archive.</p><br>
+        
+        <p class="main-h2">Starlight builds pages that are as lightweight as possible. For example, on a first visit, a user will download less than 50 KB <br>  of compressed data — just 2.5% of the HTTP archive median. With a good  caching strategy, subsequent navigations <br> can download as little as 10 KB.</p><br>
+       
+       
+        <h1 class="h1 main-h2" id="Add-Content">Images</h1>
+
+
+        <p  class=" main-h2">
+          While Starlight provides a good baseline, images you add to your docs pages can quickly increase your page weight. Starlight uses Astro’s optimized asset support to optimize local images in your Markdown and MDX files.        </p>
+        <p  class=" main-h2">Starlight is ready for you to add new content, or bring your existing files!</p><br><br>
+    
+       
+    
+       
+        <h3 class="h3 main-h2">UI components</h3>
+    
+        <p class=" main-h2" >
+          Components built with UI frameworks like React or Vue can easily add large amounts of JavaScript to a page. Because Starlight is built on Astro, components like this load zero client-side JavaScript by default thanks to Astro Islands.        </p>
+        <p  class=" main-h2">If your answer cannot be found in these docs, please visit the full Astro Docs for complete Astro documentation. Your question may be answered by understanding how Astro works in general, underneath this Starlight theme.</p>
+        <p  class=" main-h2">You can also check for any known Starlight issues on GitHub, and get help in the Astro Discord from our active, friendly community! Post questions in our #support forum with the “starlight” tag, or visit our dedicated #starlight channel to discuss current development and more!</p><br><br>
+    
+      </div>
+     
+      <div class="col-3">
+        <h4 class="h4 side-content-h4">On This Page</h4>
+        <ul class="sidebar">
+          <li><a href="#add-content">OverView</a></li>
+          <li><a href="#add-content">Page weight</a></li>
+          <li><a href="#next-step">Images</a></li>
+          <li><a href="#troubleshooting">UI Components</a></li>
+        </ul>
+      </div>
+    </div>
+     
+    </section></MainLayout>

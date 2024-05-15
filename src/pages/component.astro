@@ -1,0 +1,110 @@
+---
+// component imports
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Components">
+  <section class="container start">
+    <div class="row start-row">
+      <div class="col-9 content-page">
+        <h1 class="start-h2 h1" id="overview">Components</h1>
+
+        <div class="intro-para">
+          Estimates for the climate impact of the web industry range from
+          between 2% and 4% of global carbon <br /> emissions, roughly equivalent
+          to the emissions of the airline industry. There are many complex factors<br
+          /> in calculating the ecological impact of a website, but this guide includes
+          a few tips for reducing the <br />environmental footprint of your docs
+          site.
+        </div>
+
+        <div class="intro-para">
+          The good news is, choosing Starlight is a great start. According to
+          the Website Carbon Calculator, this<br /> site is cleaner than 99% of web
+          pages tested, producing 0.01g of CO₂ per page visit.
+        </div>
+        <h2 class="h2 main-h2" id="using-component">Using a component</h2>
+
+        <p class="main-h2">
+          Because Starlight is powered by Astro, you can add support for
+          components built with any supported UI framework (React, Preact,
+          Svelte, Vue, Solid, Lit, and Alpine) in your MDX files. Learn more
+          about using components in MDX in the Astro docs.
+        </p><br />
+
+        <p class="main-h2">
+          Starlight builds pages that are as lightweight as possible. For
+          example, on a first visit, a user will download less than 50 KB <br />
+          of compressed data — just 2.5% of the HTTP archive median. With a good
+          caching strategy, subsequent navigations <br /> can download as little
+          as 10 KB.
+        </p><br />
+
+        <h1 class="h1 main-h2" id="built-in">Built-in components</h1>
+
+        <p class="main-h2">
+          While Starlight provides a good baseline, images you add to your docs
+          pages can quickly increase your page weight. Starlight uses Astro’s
+          optimized asset support to optimize local images in your Markdown and
+          MDX files.
+        </p>
+        <p class="main-h2">
+          Starlight is ready for you to add new content, or bring your existing
+          files!
+        </p><br /><br />
+
+        <h3 class="h3 main-h2" id="file-tree">File Tree</h3>
+
+        <p class="main-h2">
+          Use the <a> component </a> to display the structure of a directory with
+          file icons and collapsible sub-directories.
+        </p>
+        <p class="main-h2">
+          Specify the structure of your files and directories with an unordered
+          Markdown list inside 
+            . Create a sub-directory using a nested list or add a / to the end
+            of a list item to render it as a directory without specific content.
+              
+        </p>
+          <p class="main-h2">
+            You can also check for any known Starlight issues on GitHub, and get
+            help in the Astro Discord from our active, friendly community! Post
+            questions in our #support forum with the “starlight” tag, or visit
+            our dedicated #starlight channel to discuss current development and
+            more!
+          </p><br /><br />
+
+     
+  <ul  class="add-ul">
+    <li  class="add-ul-li">Highlight a file or directory by making its name bold, e.g. **README.md**.</li>
+    <li class="add-ul-li">Add a comment to a file or directory by adding more text after the name.
+    </li>
+    <li class="add-ul-li">Add placeholder files and directories by using either ... or … as the name.
+    </li>
+  </ul>
+     
+      </div>
+      <div class="col-3 right-side-menu">
+        <h4 class="h4 side-content-h4">On This Page</h4>
+        <ul class="sidebar">
+          <li><a href="#overview">OverView</a></li>
+          <li><a href="#using-component">Using Components</a></li>
+          <li><a href="#built-in">Built In</a></li>
+          <li><a href="#file-tree">File Treee</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+<script>
+  // JavaScript to handle smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+  
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+  </script>
